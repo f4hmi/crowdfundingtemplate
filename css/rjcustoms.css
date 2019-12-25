@@ -117,11 +117,45 @@ a.link-block {
     color: inherit;
     text-decoration: none;
 }
+a.blog-link {
+    color: inherit;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,.1);
+}
+a.blog-link:hover {
+    -webkit-transform: none !important;
+    transform: none !important;
+}
 .valign-wrapper > .valign-box {width: 100%;}
+/*.row {
+    margin-right: -10px !important;
+    margin-left: -10px !important;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5,
+.col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10,
+.col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6,
+.col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10,
+.col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+.col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10,
+.col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
+.col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10,
+.col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6,
+.col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}*/
 .no-caret .dropdown-toggle::after {display: none;}
 .navbar-light .navbar-nav .nav-link {color: #666666;}
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {color: #333333;}
-.card {margin-bottom: 1rem;}
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,.1);
+    margin-bottom: 1rem;
+}
 .bg-main {
     background-color: #005aab;
     color: #ffffff;
@@ -147,7 +181,7 @@ a.link-block {
     bottom: 0;
     left: 0;
     content: "";
-    background-color: rgba(0,0,0,.15);
+    background-color: rgba(0,0,0,.1);
     z-index: 0;
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
@@ -222,11 +256,6 @@ footer {padding: 30px 0;}
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 34px;
-}
-.card {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px -5px rgba(0,0,0,.1);
 }
 .top-info {margin-top: -60px;}
 .link-block.to-main-bg {border: 5px solid transparent;}
@@ -347,6 +376,10 @@ table.no-padding td {
     background-color: #e33e2b;
     color: #ffffff;
 }
+.btn-whatsapp, .btn-whatsapp:hover {
+    background-color: #1bd741;
+    color: #ffffff;
+}
 .populer-tab {justify-content: center;}
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     background-color: #005aab;
@@ -360,6 +393,62 @@ table.no-padding td {
 }
 .nav-link {padding: .5rem 1.25rem;}
 .nav-link:hover {opacity: 1;}
+.pendana-box {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.pendana-box + .pendana-box {
+    margin-top: 15px;
+}
+.pendana-img {
+    -ms-flex: 0 0 60px;
+    flex: 0 0 60px;
+    max-width: 60px;
+    height: 60px;
+    background-color: #213446;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+}
+.pendana-text {
+    -ms-flex: 0 0 calc(100% - 60px);
+    flex: 0 0 calc(100% - 60px);
+    max-width: calc(100% - 60px);
+    padding-left: 15px;
+}
+.blog-img {
+    -ms-flex: 0 0 90px;
+    flex: 0 0 90px;
+    max-width: 90px;
+    background-color: #213446;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.blog-text {
+    -ms-flex: 0 0 calc(100% - 90px);
+    flex: 0 0 calc(100% - 90px);
+    max-width: calc(100% - 90px);
+    padding: 10px 15px;
+}
+.splide--nav>.splide__track>.splide__list>.splide__slide {
+    border: 5px solid transparent !important;
+    opacity: .5;
+    cursor: pointer;
+}
+.splide--nav>.splide__track>.splide__list>.splide__slide.is-active {
+    border-color: #005aab !important;
+    opacity: 1;
+}
+.splide--nav>.splide__track>.splide__list>.splide__slide:hover {opacity: 1;}
 
 
 @media (min-width: 992px) {
@@ -384,4 +473,10 @@ table.no-padding td {
         overflow-y: auto;
     }
     .top-info-number {font-size: 24px;}
+    .populer-tab {
+        justify-content: left;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        overflow-y: auto;
+    }
 }
