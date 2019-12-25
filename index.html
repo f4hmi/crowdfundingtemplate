@@ -89,15 +89,17 @@
         </div>
     </nav>
 
-    <header style="background-image:url(https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);">
-        <div class="container text-center">
-            <h1 class="title-font bold">
-                Selamat Datang di <br class="d-none d-md-block">
-                Ganesha Bisa
-            </h1>
-            <p class="mt-20">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si qua in iis corrigere voluit, deteriora fecit. Idque testamento cavebit is, qui nobis quasi oraculum ediderit nihil post mortem ad nos pertinere? Nam de isto magna dissensio est. Re mihi non aeque satisfacit, et quidem locis pluribus. At iste non dolendi status non vocatur voluptas. Duo Reges: constructio interrete. Quo modo autem philosophus loquitur?
-            </p>
+    <header style="background-image:url(https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);" class="valign-wrapper">
+        <div class="valign-box">
+            <div class="container text-center">
+                <h1 class="title-font bold">
+                    Selamat Datang di <br class="d-none d-md-block">
+                    Ganesha Bisa
+                </h1>
+                <p class="mt-20">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si qua in iis corrigere voluit, deteriora fecit. Idque testamento cavebit is, qui nobis quasi oraculum ediderit nihil post mortem ad nos pertinere? Nam de isto magna dissensio est. Re mihi non aeque satisfacit, et quidem locis pluribus. At iste non dolendi status non vocatur voluptas. Duo Reges: constructio interrete. Quo modo autem philosophus loquitur?
+                </p>
+            </div>
         </div>
     </header>
 
@@ -115,7 +117,7 @@
                                 </div>
                                 <div class="top-info-text full-height valign-wrapper">
                                     <div class="valign-box">
-                                        <div class="top-info-number semibold title-font color-second">Rp 54.346.564.853</div>
+                                        <div class="top-info-number bold title-font color-second"><span class="text-muted text-small">Rp</span> 54.346.564.853</div>
                                         <div class="text-muted medium">Total Pendanaan</div>
                                     </div>
                                 </div>
@@ -134,7 +136,7 @@
                                 </div>
                                 <div class="top-info-text full-height valign-wrapper">
                                     <div class="valign-box">
-                                        <div class="top-info-number semibold title-font color-second">153.905</div>
+                                        <div class="top-info-number bold title-font color-second">153.905</div>
                                         <div class="text-muted medium">Pemberi Dana</div>
                                     </div>
                                 </div>
@@ -226,84 +228,357 @@
                     <a href="donasi.html" class="btn btn-main"><span>Lihat Semua</span></a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card overflow-hidden">
-                        <div class="bg-donasi" style="background-image:url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg);"></div>
-                        <div class="card-body">
-                            <div class="mb-25 font-title bold judul-donasi">
-                                Bantu Korban Bencana Palu, Ayo Bangun Shelter dari Bambu Sebagai Hunian Sementara
-                            </div>
-                            <div class="mb-10"><i class="icofont-user-alt-4 mr-5 text-muted"></i> ITB Runner 2000</div>
-                            <div class="row">
-                                <div class="col-7">
-                                    <div class="text-muted"><i class="icofont-"></i> Terkumpul</div>
-                                    <div class="bold">Rp 57.897.865</div>
+            <ul class="nav nav-pills populer-tab mb-20" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-donasi-tab" data-toggle="pill" href="#pills-donasi" role="tab" aria-controls="pills-donasi" aria-selected="true">Donasi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-beasiswa-tab" data-toggle="pill" href="#pills-beasiswa" role="tab" aria-controls="pills-beasiswa" aria-selected="false">Beasiswa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-investasi-tab" data-toggle="pill" href="#pills-investasi" role="tab" aria-controls="pills-investasi" aria-selected="false">Investasi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-fundraiser-tab" data-toggle="pill" href="#pills-fundraiser" role="tab" aria-controls="pills-fundraiser" aria-selected="false">Fundraiser</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-donasi" role="tabpanel" aria-labelledby="pills-donasi-tab">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card overflow-hidden">
+                                <div class="bg-donasi" style="background-image:url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg);"></div>
+                                <div class="card-body">
+                                    <div class="mb-25 font-title bold judul-donasi">
+                                        Bantu Korban Bencana Palu, Ayo Bangun Shelter dari Bambu Sebagai Hunian Sementara
+                                    </div>
+                                    <div class="mb-10"><i class="icofont-user-alt-4 mr-5 text-muted"></i> ITB Runner 2000</div>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="text-muted"><i class="icofont-"></i> Terkumpul</div>
+                                            <div class="bold">Rp 57.897.865</div>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <div class="text-muted"><i class="icofont-clock"></i> Batas Waktu</div>
+                                            <div class="bold">234 hari lagi</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-5">
+                                        <div class="progress-bar bg-main progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    </div>
+                                    <div class="mt-20">
+                                        <a href="danai.html" class="btn btn-block btn-main"><span>Danai Sekarang</span></a>
+                                    </div>
                                 </div>
-                                <div class="col-5 text-right">
-                                    <div class="text-muted"><i class="icofont-clock"></i> Batas Waktu</div>
-                                    <div class="bold">234 hari lagi</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card overflow-hidden">
+                                <div class="bg-donasi" style="background-image:url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg);"></div>
+                                <div class="card-body">
+                                    <div class="mb-25 font-title bold judul-donasi">
+                                        Bantu Korban Bencana Palu, Ayo Bangun Shelter dari Bambu Sebagai Hunian Sementara
+                                    </div>
+                                    <div class="mb-10"><i class="icofont-user-alt-4 mr-5 text-muted"></i> ITB Runner 2000</div>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="text-muted"><i class="icofont-"></i> Terkumpul</div>
+                                            <div class="bold">Rp 57.897.865</div>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <div class="text-muted"><i class="icofont-clock"></i> Batas Waktu</div>
+                                            <div class="bold">234 hari lagi</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-5">
+                                        <div class="progress-bar bg-main progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    </div>
+                                    <div class="mt-20">
+                                        <a href="danai.html" class="btn btn-block btn-main"><span>Danai Sekarang</span></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="progress mt-5">
-                                <div class="progress-bar bg-main progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                            </div>
-                            <div class="mt-20">
-                                <a href="danai.html" class="btn btn-block btn-main"><span>Danai Sekarang</span></a>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card overflow-hidden">
+                                <div class="bg-donasi" style="background-image:url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg);"></div>
+                                <div class="card-body">
+                                    <div class="mb-25 font-title bold judul-donasi">
+                                        Bantu Korban Bencana Palu, Ayo Bangun Shelter dari Bambu Sebagai Hunian Sementara
+                                    </div>
+                                    <div class="mb-10"><i class="icofont-user-alt-4 mr-5 text-muted"></i> ITB Runner 2000</div>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="text-muted"><i class="icofont-"></i> Terkumpul</div>
+                                            <div class="bold">Rp 57.897.865</div>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <div class="text-muted"><i class="icofont-clock"></i> Batas Waktu</div>
+                                            <div class="bold">234 hari lagi</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-5">
+                                        <div class="progress-bar bg-main progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    </div>
+                                    <div class="mt-20">
+                                        <a href="danai.html" class="btn btn-block btn-main"><span>Danai Sekarang</span></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card overflow-hidden">
-                        <div class="bg-donasi" style="background-image:url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg);"></div>
-                        <div class="card-body">
-                            <div class="mb-25 font-title bold judul-donasi">
-                                Bantu Korban Bencana Palu, Ayo Bangun Shelter dari Bambu Sebagai Hunian Sementara
-                            </div>
-                            <div class="mb-10"><i class="icofont-user-alt-4 mr-5 text-muted"></i> ITB Runner 2000</div>
-                            <div class="row">
-                                <div class="col-7">
-                                    <div class="text-muted"><i class="icofont-"></i> Terkumpul</div>
-                                    <div class="bold">Rp 57.897.865</div>
+                <div class="tab-pane fade" id="pills-beasiswa" role="tabpanel" aria-labelledby="pills-beasiswa-tab">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card overflow-hidden">
+                                <div class="bg-donasi" style="background-image:url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg);"></div>
+                                <div class="card-body">
+                                    <div class="mb-25 font-title bold judul-donasi">
+                                        Bantu Korban Bencana Palu, Ayo Bangun Shelter dari Bambu Sebagai Hunian Sementara
+                                    </div>
+                                    <div class="mb-10"><i class="icofont-user-alt-4 mr-5 text-muted"></i> ITB Runner 2000</div>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="text-muted"><i class="icofont-"></i> Terkumpul</div>
+                                            <div class="bold">Rp 57.897.865</div>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <div class="text-muted"><i class="icofont-clock"></i> Batas Waktu</div>
+                                            <div class="bold">234 hari lagi</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-5">
+                                        <div class="progress-bar bg-main progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    </div>
+                                    <div class="mt-20">
+                                        <a href="danai.html" class="btn btn-block btn-main"><span>Danai Sekarang</span></a>
+                                    </div>
                                 </div>
-                                <div class="col-5 text-right">
-                                    <div class="text-muted"><i class="icofont-clock"></i> Batas Waktu</div>
-                                    <div class="bold">234 hari lagi</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card overflow-hidden">
+                                <div class="bg-donasi" style="background-image:url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg);"></div>
+                                <div class="card-body">
+                                    <div class="mb-25 font-title bold judul-donasi">
+                                        Bantu Korban Bencana Palu, Ayo Bangun Shelter dari Bambu Sebagai Hunian Sementara
+                                    </div>
+                                    <div class="mb-10"><i class="icofont-user-alt-4 mr-5 text-muted"></i> ITB Runner 2000</div>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="text-muted"><i class="icofont-"></i> Terkumpul</div>
+                                            <div class="bold">Rp 57.897.865</div>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <div class="text-muted"><i class="icofont-clock"></i> Batas Waktu</div>
+                                            <div class="bold">234 hari lagi</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-5">
+                                        <div class="progress-bar bg-main progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    </div>
+                                    <div class="mt-20">
+                                        <a href="danai.html" class="btn btn-block btn-main"><span>Danai Sekarang</span></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="progress mt-5">
-                                <div class="progress-bar bg-main progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                            </div>
-                            <div class="mt-20">
-                                <a href="danai.html" class="btn btn-block btn-main"><span>Danai Sekarang</span></a>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card overflow-hidden">
+                                <div class="bg-donasi" style="background-image:url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg);"></div>
+                                <div class="card-body">
+                                    <div class="mb-25 font-title bold judul-donasi">
+                                        Bantu Korban Bencana Palu, Ayo Bangun Shelter dari Bambu Sebagai Hunian Sementara
+                                    </div>
+                                    <div class="mb-10"><i class="icofont-user-alt-4 mr-5 text-muted"></i> ITB Runner 2000</div>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="text-muted"><i class="icofont-"></i> Terkumpul</div>
+                                            <div class="bold">Rp 57.897.865</div>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <div class="text-muted"><i class="icofont-clock"></i> Batas Waktu</div>
+                                            <div class="bold">234 hari lagi</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-5">
+                                        <div class="progress-bar bg-main progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    </div>
+                                    <div class="mt-20">
+                                        <a href="danai.html" class="btn btn-block btn-main"><span>Danai Sekarang</span></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card overflow-hidden">
-                        <div class="bg-donasi" style="background-image:url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg);"></div>
-                        <div class="card-body">
-                            <div class="mb-25 font-title bold judul-donasi">
-                                Bantu Korban Bencana Palu, Ayo Bangun Shelter dari Bambu Sebagai Hunian Sementara
-                            </div>
-                            <div class="mb-10"><i class="icofont-user-alt-4 mr-5 text-muted"></i> ITB Runner 2000</div>
-                            <div class="row">
-                                <div class="col-7">
-                                    <div class="text-muted"><i class="icofont-"></i> Terkumpul</div>
-                                    <div class="bold">Rp 57.897.865</div>
+                <div class="tab-pane fade" id="pills-investasi" role="tabpanel" aria-labelledby="pills-investasi-tab">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card overflow-hidden">
+                                <div class="bg-donasi" style="background-image:url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg);"></div>
+                                <div class="card-body">
+                                    <div class="mb-25 font-title bold judul-donasi">
+                                        Bantu Korban Bencana Palu, Ayo Bangun Shelter dari Bambu Sebagai Hunian Sementara
+                                    </div>
+                                    <div class="mb-10"><i class="icofont-user-alt-4 mr-5 text-muted"></i> ITB Runner 2000</div>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="text-muted"><i class="icofont-"></i> Terkumpul</div>
+                                            <div class="bold">Rp 57.897.865</div>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <div class="text-muted"><i class="icofont-clock"></i> Batas Waktu</div>
+                                            <div class="bold">234 hari lagi</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-5">
+                                        <div class="progress-bar bg-main progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    </div>
+                                    <div class="mt-20">
+                                        <a href="danai.html" class="btn btn-block btn-main"><span>Danai Sekarang</span></a>
+                                    </div>
                                 </div>
-                                <div class="col-5 text-right">
-                                    <div class="text-muted"><i class="icofont-clock"></i> Batas Waktu</div>
-                                    <div class="bold">234 hari lagi</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card overflow-hidden">
+                                <div class="bg-donasi" style="background-image:url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg);"></div>
+                                <div class="card-body">
+                                    <div class="mb-25 font-title bold judul-donasi">
+                                        Bantu Korban Bencana Palu, Ayo Bangun Shelter dari Bambu Sebagai Hunian Sementara
+                                    </div>
+                                    <div class="mb-10"><i class="icofont-user-alt-4 mr-5 text-muted"></i> ITB Runner 2000</div>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="text-muted"><i class="icofont-"></i> Terkumpul</div>
+                                            <div class="bold">Rp 57.897.865</div>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <div class="text-muted"><i class="icofont-clock"></i> Batas Waktu</div>
+                                            <div class="bold">234 hari lagi</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-5">
+                                        <div class="progress-bar bg-main progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    </div>
+                                    <div class="mt-20">
+                                        <a href="danai.html" class="btn btn-block btn-main"><span>Danai Sekarang</span></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="progress mt-5">
-                                <div class="progress-bar bg-main progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card overflow-hidden">
+                                <div class="bg-donasi" style="background-image:url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg);"></div>
+                                <div class="card-body">
+                                    <div class="mb-25 font-title bold judul-donasi">
+                                        Bantu Korban Bencana Palu, Ayo Bangun Shelter dari Bambu Sebagai Hunian Sementara
+                                    </div>
+                                    <div class="mb-10"><i class="icofont-user-alt-4 mr-5 text-muted"></i> ITB Runner 2000</div>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="text-muted"><i class="icofont-"></i> Terkumpul</div>
+                                            <div class="bold">Rp 57.897.865</div>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <div class="text-muted"><i class="icofont-clock"></i> Batas Waktu</div>
+                                            <div class="bold">234 hari lagi</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-5">
+                                        <div class="progress-bar bg-main progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    </div>
+                                    <div class="mt-20">
+                                        <a href="danai.html" class="btn btn-block btn-main"><span>Danai Sekarang</span></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="mt-20">
-                                <a href="danai.html" class="btn btn-block btn-main"><span>Danai Sekarang</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-fundraiser" role="tabpanel" aria-labelledby="pills-fundraiser-tab">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card overflow-hidden">
+                                <div class="bg-donasi" style="background-image:url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg);"></div>
+                                <div class="card-body">
+                                    <div class="mb-25 font-title bold judul-donasi">
+                                        Bantu Korban Bencana Palu, Ayo Bangun Shelter dari Bambu Sebagai Hunian Sementara
+                                    </div>
+                                    <div class="mb-10"><i class="icofont-user-alt-4 mr-5 text-muted"></i> ITB Runner 2000</div>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="text-muted"><i class="icofont-"></i> Terkumpul</div>
+                                            <div class="bold">Rp 57.897.865</div>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <div class="text-muted"><i class="icofont-clock"></i> Batas Waktu</div>
+                                            <div class="bold">234 hari lagi</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-5">
+                                        <div class="progress-bar bg-main progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    </div>
+                                    <div class="mt-20">
+                                        <a href="danai.html" class="btn btn-block btn-main"><span>Danai Sekarang</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card overflow-hidden">
+                                <div class="bg-donasi" style="background-image:url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg);"></div>
+                                <div class="card-body">
+                                    <div class="mb-25 font-title bold judul-donasi">
+                                        Bantu Korban Bencana Palu, Ayo Bangun Shelter dari Bambu Sebagai Hunian Sementara
+                                    </div>
+                                    <div class="mb-10"><i class="icofont-user-alt-4 mr-5 text-muted"></i> ITB Runner 2000</div>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="text-muted"><i class="icofont-"></i> Terkumpul</div>
+                                            <div class="bold">Rp 57.897.865</div>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <div class="text-muted"><i class="icofont-clock"></i> Batas Waktu</div>
+                                            <div class="bold">234 hari lagi</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-5">
+                                        <div class="progress-bar bg-main progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    </div>
+                                    <div class="mt-20">
+                                        <a href="danai.html" class="btn btn-block btn-main"><span>Danai Sekarang</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card overflow-hidden">
+                                <div class="bg-donasi" style="background-image:url(https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg);"></div>
+                                <div class="card-body">
+                                    <div class="mb-25 font-title bold judul-donasi">
+                                        Bantu Korban Bencana Palu, Ayo Bangun Shelter dari Bambu Sebagai Hunian Sementara
+                                    </div>
+                                    <div class="mb-10"><i class="icofont-user-alt-4 mr-5 text-muted"></i> ITB Runner 2000</div>
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="text-muted"><i class="icofont-"></i> Terkumpul</div>
+                                            <div class="bold">Rp 57.897.865</div>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <div class="text-muted"><i class="icofont-clock"></i> Batas Waktu</div>
+                                            <div class="bold">234 hari lagi</div>
+                                        </div>
+                                    </div>
+                                    <div class="progress mt-5">
+                                        <div class="progress-bar bg-main progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    </div>
+                                    <div class="mt-20">
+                                        <a href="danai.html" class="btn btn-block btn-main"><span>Danai Sekarang</span></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
