@@ -186,6 +186,10 @@ a.blog-link:hover {
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
 }
+.btn.disabled, .btn[disabled="disabled"] {
+    box-shadow: none;
+    pointer-events: none;
+}
 .btn.btn-second:before {background-color: rgba(255,255,255,.1);}
 .btn:active {
     -webkit-transform: translateY(1px);
@@ -393,6 +397,26 @@ table.no-padding td {
 }
 .nav-link {padding: .5rem 1.25rem;}
 .nav-link:hover {opacity: 1;}
+.nav-pills.danai-tab > .nav-item + .nav-item {margin-left: 30px;}
+.nav-pills.danai-tab > .nav-item {position: relative;}
+.nav-pills.danai-tab > .nav-item + .nav-item:before {
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    height: 3px;
+    width: 21px;
+    background-color: rgba(0,0,0,.15);
+    content: "";
+}
+.nav-pills.danai-tab .nav-link.active, .nav-pills.danai-tab .show>.nav-link {
+    background-color: #005aab;
+    border: 3px solid #00a1ff;
+}
+.nav-pills.danai-tab .nav-link {
+    background-color: #e0e0e0;
+    border: 3px solid #f1f1f1;
+    border-radius: 25px;
+}
 .pendana-box {
     display: -ms-flexbox;
     display: flex;
@@ -449,6 +473,101 @@ table.no-padding td {
     opacity: 1;
 }
 .splide--nav>.splide__track>.splide__list>.splide__slide:hover {opacity: 1;}
+.verif-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height: 16px !important;
+    border-radius: 50%;
+    font-size: 14px;
+    text-align: center;
+    background-color: #005aab;
+    color: #ffffff;
+}
+.page-link {color: #213446;}
+.page-item.active .page-link {
+    background-color: #005aaa;
+    border-color: #005aaa;
+}
+.page-link:hover {color: #213446;}
+span.danai-tab-number {
+    display: inline-block;
+    border: 2px solid;
+    width: 25px;
+    height: 25px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.danai-wrapper {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.danai-content {
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #213446;
+    color: #ffffff;
+}
+.form-control {border-radius: 7px;}
+.danai-content .form-control {
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, .25);
+    color: #ffffff;
+}
+.nominal-prefix {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+}
+.input-nominal {
+    text-align: right;
+    padding-left: 50px;
+}
+.pilih-bank-box {display: block;}
+.pilih-bank-box > input[type="radio"] {display: none;}
+.pilih-bank-text {
+    display: block;
+    width: 100%;
+    padding: 7px 15px;
+    border: 1px solid #596774;
+    border-radius: 7px;
+    color: #596774;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+.pilih-bank-box > input[type="radio"]:checked + .pilih-bank-text {
+    background-color: #596774;
+    color: #ffffff;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: #005aab;
+    background-color: #005aab;
+}
+.img-reg {
+    width: 500px;
+    max-width: 100%;
+}
+.reg-page {background-color: #005aab;}
+.reg-box .icofont {
+    position: absolute;
+    top: 9px;
+    font-size: 20px;
+    left: 12px;
+    color: rgba(0,0,0,.55);
+}
+.reg-box .form-control {
+    background-color: rgba(33,52,70,.2);
+    border: none;
+    color: #333333;
+    padding-left: 45px;
+}
+.btn-reg {
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
+}
 
 
 @media (min-width: 992px) {
@@ -478,5 +597,9 @@ table.no-padding td {
         white-space: nowrap;
         flex-wrap: nowrap;
         overflow-y: auto;
+    }
+    .img-reg {
+        margin-bottom: 40px;
+        max-width: 85%;
     }
 }
