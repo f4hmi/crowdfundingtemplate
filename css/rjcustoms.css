@@ -372,6 +372,22 @@ table.no-padding td {
     padding: 0 15px;
     z-index: 1;
 }
+.text-atau.in-bglight:before {
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    left: 1px;
+    content: "";
+    height: 1px;
+    background-color: rgba(0,0,0,.15);
+    z-index: 0;
+}
+.text-atau.in-bglight > span {
+    position: relative;
+    background-color: #ffffff;
+    padding: 0 15px;
+    z-index: 1;
+}
 .btn-facebook, .btn-facebook:hover {
     background-color: #3a559f;
     color: #ffffff;
@@ -550,7 +566,10 @@ span.danai-tab-number {
     width: 500px;
     max-width: 100%;
 }
-.reg-page {background-color: #005aab;}
+.reg-page {
+    background-color: #005aab;
+    padding: 20px 0;
+}
 .reg-box .icofont {
     position: absolute;
     top: 9px;
@@ -602,4 +621,5 @@ span.danai-tab-number {
         margin-bottom: 40px;
         max-width: 85%;
     }
+    .img-login {display: none;}
 }
