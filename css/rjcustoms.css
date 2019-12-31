@@ -322,7 +322,7 @@ table.no-padding td {
     border: none;
     border-radius: 7px;
     padding: 1.5rem;
-    top: calc(100% + 7px);
+    top: calc(100% + 6px);
     background-color: #213446;
     color: #ffffff;
     width: 320px;
@@ -336,6 +336,23 @@ table.no-padding td {
     top: -24px;
     right: 15%;
 }
+.user-dropdown {
+    width: auto;
+    padding: 1rem;
+    background-color: #005aab;
+    color: #ffffff;
+}
+.login-dropdown:before {border-color: transparent transparent #005aab;}
+.user-dropdown > a {
+    color: rgba(255,255,255,.85);
+    padding: 0.5rem 0;
+    text-decoration: none;
+}
+.user-dropdown > a:hover {
+    color: #ffffff;
+    background: none !important;
+}
+.user-dropdown > hr {border-top-color: rgba(255,255,255,.25);}
 .login-form .icofont {
     position: absolute;
     top: 12px;
@@ -587,6 +604,19 @@ span.danai-tab-number {
     padding-right: 3.5rem;
     padding-left: 3.5rem;
 }
+.img-user {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    margin: -4px 5px 0 0;
+}
+.img-user + .name-user {vertical-align: top;}
+.dropdown-toggle.user-toggle::after {vertical-align: 0.8em;}
 
 
 @media (min-width: 992px) {
